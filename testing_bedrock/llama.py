@@ -18,8 +18,6 @@ payload = {
     "top_p":0.9
 }
 
-
-
 body = json.dumps(payload)
 
 model_id = "meta.llama3-70b-instruct-v1:0"
