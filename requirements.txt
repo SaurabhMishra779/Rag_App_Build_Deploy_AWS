@@ -8,5 +8,5 @@ langchain_community
 chromadb
 awscli
 streamlit
-
+pypdf
 

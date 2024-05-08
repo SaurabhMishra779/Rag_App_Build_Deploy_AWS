@@ -5,9 +5,9 @@ import os
 import boto3
 
 
-from langchain_community.embeddings import BedrockEmbedding 
+from langchain_community.embeddings import BedrockEmbeddings
 
-from langchain.llms.Bedrock import Bedrock
-from langchain.prompt import PromptTemplate
+from langchain_community.llms import Bedrock
+from langchain_core.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain.vectorstores import FAISS
