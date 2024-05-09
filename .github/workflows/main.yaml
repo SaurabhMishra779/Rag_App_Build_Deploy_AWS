@@ -1,7 +1,5 @@
 name: workflow
 
-
-  
 on:
   push:
     branches:
@@ -12,7 +10,6 @@ on:
 permissions:
   id-token: write
   contents: read
-
 
 jobs:
   integration:
@@ -51,7 +48,7 @@ jobs:
         id: build-image
         env:
           IMAGE_TAG: latest
-        run: /
+        run: |
           # Build a docker container and
           # push it to ECR so that it can
           docker build -t ${{ secrets.AWS_ECR_REPO_URI }}:$IMAGE_TAG .
