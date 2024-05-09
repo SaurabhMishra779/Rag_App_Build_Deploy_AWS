@@ -30,8 +30,7 @@ def main():
                 get_vector_store(docs)
                 st.success("done")
 
-
-
+#creating button and executing functions on 
 
         if st.button("llama3 model "):
             with st.spinner("processing ...."):
